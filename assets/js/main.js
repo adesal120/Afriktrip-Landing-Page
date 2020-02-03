@@ -96,7 +96,7 @@
 		})();
 
 	// Signup Form.
-		(function() {
+	/* 	(function() {
 
 			// Vars.
 				var $form = document.querySelectorAll('#signup-form')[0],
@@ -126,7 +126,7 @@
 
 				$message._hide = function() {
 					$message.classList.remove('visible');
-				};
+				};  
 
 			// Events.
 			// Note: If you're *not* using AJAX, get rid of this event listener.
