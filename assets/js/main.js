@@ -32,7 +32,7 @@
 						images: {
 							'images/img01.jpg': 'center',
 							'images/img02.jpg': 'center',
-							'images/img03.jpg': 'center'
+							'images/img05.jpg': 'center',
 						},
 
 					// Delay.
@@ -96,7 +96,7 @@
 		})();
 
 	// Signup Form.
-	/* 	(function() {
+	(function() {
 
 			// Vars.
 				var $form = document.querySelectorAll('#signup-form')[0],
@@ -139,7 +139,7 @@
 						$message._hide();
 
 					// Disable submit.
-						$submit.disabled = true;
+						$submit.disabled = true; 
 
 					// Process form.
 					// Note: Doesn't actually do anything yet (other than report back with a "thank you"),
