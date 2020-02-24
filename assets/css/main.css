@@ -46,11 +46,11 @@ mark {
   background-color: transparent;
   color: inherit; }
 
-input::-moz-focus-inner {
+button::-moz-focus-inner {
   border: 0;
   padding: 0; }
 
-input, select, textarea {
+button, select, textarea {
   -moz-appearance: none;
   -webkit-appearance: none;
   -ms-appearance: none;
@@ -224,7 +224,7 @@ body {
     transform: translateX(-25%); } }
 
 /* Type */
-body, input, select, textarea {
+body, button, select, textarea {
   color: rgba(255, 255, 255, 0.75);
   font-family: "Roboto", sans-serif;
   font-size: 16pt;
@@ -232,19 +232,19 @@ body, input, select, textarea {
   letter-spacing: -0.01em;
   line-height: 1.65em; }
   @media screen and (max-width: 1680px) {
-    body, input, select, textarea {
+    body, button, select, textarea {
       font-size: 12pt; } }
   @media screen and (max-width: 1280px) {
-    body, input, select, textarea {
+    body, button, select, textarea {
       font-size: 11pt; } }
   @media screen and (max-width: 980px) {
-    body, input, select, textarea {
+    body, button, select, textarea {
       font-size: 12pt; } }
   @media screen and (max-width: 736px) {
-    body, input, select, textarea {
+    body, button, select, textarea {
       font-size: 12pt; } }
   @media screen and (max-width: 480px) {
-    body, input, select, textarea {
+    body, button, select, textarea {
       font-size: 12pt; } }
 
 a {
@@ -559,9 +559,9 @@ label {
     -ms-transform: scale(1);
     transform: scale(1); } }
 
-input[type="text"],
-input[type="password"],
-input[type="email"],
+button[type="text"],
+button[type="password"],
+button[type="email"],
 select,
 textarea {
   -moz-appearance: none;
@@ -586,15 +586,15 @@ textarea {
   padding: 0 1em;
   text-decoration: none;
   width: 100%; }
-  input[type="text"]:invalid,
-  input[type="password"]:invalid,
-  input[type="email"]:invalid,
+  button[type="text"]:invalid,
+  button[type="password"]:invalid,
+  button[type="email"]:invalid,
   select:invalid,
   textarea:invalid {
     box-shadow: none; }
-  input[type="text"]:focus,
-  input[type="password"]:focus,
-  input[type="email"]:focus,
+  button[type="text"]:focus,
+  button[type="password"]:focus,
+  button[type="email"]:focus,
   select:focus,
   textarea:focus {
     -moz-animation: focus 0.1s;
@@ -620,17 +620,17 @@ select {
   select::-ms-expand {
     display: none; }
 
-input[type="text"],
-input[type="password"],
-input[type="email"],
+button[type="text"],
+button[type="password"],
+button[type="email"],
 select {
   height: 2.75em; }
 
 textarea {
   padding: 0.75em 1em; }
 
-input[type="checkbox"],
-input[type="radio"] {
+button[type="checkbox"],
+button[type="radio"] {
   -moz-appearance: none;
   -webkit-appearance: none;
   -ms-appearance: none;
@@ -641,8 +641,8 @@ input[type="radio"] {
   opacity: 0;
   width: 1em;
   z-index: -1; }
-  input[type="checkbox"] + label,
-  input[type="radio"] + label {
+  button[type="checkbox"] + label,
+  button[type="radio"] + label {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.75);
     cursor: pointer;
@@ -652,8 +652,8 @@ input[type="radio"] {
     padding-left: 2.4em;
     padding-right: 0.75em;
     position: relative; }
-    input[type="checkbox"] + label:before,
-    input[type="radio"] + label:before {
+    button[type="checkbox"] + label:before,
+    button[type="radio"] + label:before {
       -moz-osx-font-smoothing: grayscale;
       -webkit-font-smoothing: antialiased;
       display: inline-block;
@@ -664,8 +664,8 @@ input[type="radio"] {
       text-transform: none !important;
       font-family: 'Font Awesome 5 Free';
       font-weight: 900; }
-    input[type="checkbox"] + label:before,
-    input[type="radio"] + label:before {
+    button[type="checkbox"] + label:before,
+    button[type="radio"] + label:before {
       background: rgba(255, 255, 255, 0.125);
       border-radius: 6px;
       border: solid 2px rgba(255, 255, 255, 0.35);
@@ -679,24 +679,24 @@ input[type="radio"] {
       text-align: center;
       top: 0;
       width: 1.65em; }
-  input[type="checkbox"]:checked + label:before,
-  input[type="radio"]:checked + label:before {
+  button[type="checkbox"]:checked + label:before,
+  button[type="radio"]:checked + label:before {
     background: #1cb495;
     border-color: #1cb495;
     color: #ffffff;
     content: '\f00c'; }
-  input[type="checkbox"]:focus + label:before,
-  input[type="radio"]:focus + label:before {
+  button[type="checkbox"]:focus + label:before,
+  button[type="radio"]:focus + label:before {
     border-color: #1cb495;
     box-shadow: 0 0 0 2px #1cb495; }
 
-input[type="checkbox"] + label:before {
+button[type="checkbox"] + label:before {
   border-radius: 6px; }
 
-input[type="radio"] + label:before {
+button[type="radio"] + label:before {
   border-radius: 100%; }
 
-::-webkit-input-placeholder {
+::-webkit-button-placeholder {
   color: rgba(255, 255, 255, 0.5) !important;
   opacity: 1.0; }
 
@@ -708,7 +708,7 @@ input[type="radio"] + label:before {
   color: rgba(255, 255, 255, 0.5) !important;
   opacity: 1.0; }
 
-:-ms-input-placeholder {
+:-ms-button-placeholder {
   color: rgba(255, 255, 255, 0.5) !important;
   opacity: 1.0; }
 
@@ -717,9 +717,9 @@ input[type="radio"] + label:before {
   opacity: 1.0; }
 
 /* Button */
-input[type="submit"],
-input[type="reset"],
-input[type="button"],
+button[type="submit"],
+button[type="reset"],
+button[type="button"],
 button,
 .button {
   -moz-appearance: none;
@@ -743,32 +743,32 @@ button,
   text-align: center;
   text-decoration: none;
   white-space: nowrap; }
-  input[type="submit"]:hover,
-  input[type="reset"]:hover,
-  input[type="button"]:hover,
+  button[type="submit"]:hover,
+  button[type="reset"]:hover,
+  button[type="button"]:hover,
   button:hover,
   .button:hover {
     background-color: #1cb495; }
-  input[type="submit"]:active,
-  input[type="reset"]:active,
-  input[type="button"]:active,
+  button[type="submit"]:active,
+  button[type="reset"]:active,
+  button[type="button"]:active,
   button:active,
   .button:active {
     background-color: #1cb495; }
-  input[type="submit"].disabled, input[type="submit"]:disabled,
-  input[type="reset"].disabled,
-  input[type="reset"]:disabled,
-  input[type="button"].disabled,
-  input[type="button"]:disabled,
+  button[type="submit"].disabled, button[type="submit"]:disabled,
+  button[type="reset"].disabled,
+  button[type="reset"]:disabled,
+  button[type="button"].disabled,
+  button[type="button"]:disabled,
   button.disabled,
   button:disabled,
   .button.disabled,
   .button:disabled {
     opacity: 0.5; }
   @media screen and (max-width: 480px) {
-    input[type="submit"],
-    input[type="reset"],
-    input[type="button"],
+    button[type="submit"],
+    button[type="reset"],
+    button[type="button"],
     button,
     .button {
       padding: 0; } }
@@ -802,9 +802,9 @@ button,
   display: -ms-flex;
   display: flex;
   position: relative; }
-  #signup-form input[type="text"],
-  #signup-form input[type="password"],
-  #signup-form input[type="email"] {
+  #signup-form button[type="text"],
+  #signup-form button[type="password"],
+  #signup-form button[type="email"] {
     width: 18em; }
   #signup-form > * {
     margin: 0 0 0 1em; }
@@ -816,9 +816,9 @@ button,
       -webkit-flex-direction: column;
       -ms-flex-direction: column;
       flex-direction: column; }
-      #signup-form input[type="text"],
-      #signup-form input[type="password"],
-      #signup-form input[type="email"] {
+      #signup-form button[type="text"],
+      #signup-form button[type="password"],
+      #signup-form button[type="email"] {
         width: 100%; }
       #signup-form > * {
         margin: 1.25em 0 0 0; }

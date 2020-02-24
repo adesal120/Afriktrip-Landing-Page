@@ -99,7 +99,7 @@
 	(function() {
 
 			// Vars.
-				var $form = document.querySelectorAll('#signup-form')[0],
+	//			var $form = document.querySelectorAll('#signup-form')[0],
 					$submit = document.querySelectorAll('#signup-form input[type="submit"]')[0],
 					$message;
 
@@ -156,7 +156,7 @@
 								$message._show('success', 'Thank you! Kindly check your mail');
 								//$message._show('failure', 'Something went wrong. Please try again.');
 
-						}, 750);
+						}, 750); 
 
 				});
 
